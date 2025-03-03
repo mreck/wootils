@@ -19,19 +19,19 @@ if (isset($_GET["search"])) {
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="bookmarks.css">
+    <link rel="stylesheet" href="/bookmarks/bookmarks.css">
     <title>wootils | bookmarks</title>
 </head>
-<body>
+<body class="content">
     <nav>
         <ul>
             <li>
-                <a href="add.php">Add Link</a>
+                <a href="/bookmarks/add.php">Add Link</a>
             </li>
         </ul>
     </nav>
     <form method="get">
-        <input type="text" name="search" value="<?= $search ?>" autofocus>
+        <input type="text" name="search" placeholder="search..." value="<?= $search ?>" autofocus>
     </form>
     <ul>
         <?php while ($row = $res->fetchArray()) { ?>

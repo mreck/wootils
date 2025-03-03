@@ -16,29 +16,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="bookmarks.css">
+    <link rel="stylesheet" href="/bookmarks/bookmarks.css">
     <title>wootils | bookmarks | add</title>
 </head>
-<body>
+<body class="content">
     <nav>
         <ul>
             <li>
-                <a href=".">Bookmarks</a>
+                <a href="/bookmarks/">Bookmarks</a>
             </li>
         </ul>
     </nav>
     <form method="post" autocomplete="off">
         <div>
             <label for="link">Link</label>
-            <input type="text" name="link" autofocus>
+            <input type="text" id="link" name="link" autofocus>
         </div>
         <div>
             <label for="title">Title</label>
-            <input type="text" name="title">
+            <input type="text" id="title" name="title">
         </div>
         <div>
             <label for="tags">Tags</label>
-            <input type="text" name="tags">
+            <input type="text" id="tags" name="tags">
         </div>
         <div>
             <input type="submit" value="save">
