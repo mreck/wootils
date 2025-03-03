@@ -11,12 +11,30 @@ body {
     font-size: 1.1rem;
 }
 
+nav {
+    border-bottom: 1px solid white;
+}
+
+nav ul {
+    margin: 1rem 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+nav li:not(:first-child)::before {
+    content: " | ";
+}
+
 input {
     background-color: black;
     color: white;
     font-size: 1.1rem;
     border: 1px solid white;
-    padding: 6px 12px;
+    padding: 0.4rem 0.8rem;
 }
 
 a {
@@ -25,7 +43,6 @@ a {
 }
 
 a:hover {
-    font-weight: bold;
     text-decoration: underline;
 }
 
